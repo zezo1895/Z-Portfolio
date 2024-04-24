@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Z-Portfolio/static/css/main.a4a5519d.css",
+    "main.css": "/Z-Portfolio/static/css/main.42f4f40c.css",
     "main.js": "/Z-Portfolio/static/js/main.db76edf3.js",
     "static/js/453.1407b060.chunk.js": "/Z-Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/p1.gif": "/Z-Portfolio/static/media/p1.f7756cea866a854ec325.gif",
@@ -9,12 +9,12 @@
     "static/media/avtar.png": "/Z-Portfolio/static/media/avtar.02782cb932bbdb9692a2.png",
     "static/media/p3.gif": "/Z-Portfolio/static/media/p3.33eae4c68fc943e49169.gif",
     "index.html": "/Z-Portfolio/index.html",
-    "main.a4a5519d.css.map": "/Z-Portfolio/static/css/main.a4a5519d.css.map",
+    "main.42f4f40c.css.map": "/Z-Portfolio/static/css/main.42f4f40c.css.map",
     "main.db76edf3.js.map": "/Z-Portfolio/static/js/main.db76edf3.js.map",
     "453.1407b060.chunk.js.map": "/Z-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4a5519d.css",
+    "static/css/main.42f4f40c.css",
     "static/js/main.db76edf3.js"
   ]
 }
