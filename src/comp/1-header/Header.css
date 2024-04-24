@@ -1,0 +1,117 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header ul.listnav {
+  gap: 16px;
+  padding: 1rem;
+  margin: 0;
+  background-color: #252529;
+  border: 2px solid var(--border);
+  border-radius: 2rem;
+  box-shadow: 1px 1px 40px rgba(35,33,33,1);
+}
+header  li a {
+  color: var(--title);
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+header  li a:hover{
+    color: var(--blue);
+}
+/* header  li */
+header  li:hover  {
+
+  transform: scale(1.2);
+  transition: .4s;
+}
+header .menu{
+    display: none;
+}
+
+header  .menulist{
+position: fixed;
+inset: 0;
+background-color: rgba(40,40,48,0.91);
+padding-top: 2rem;
+}
+header ul.model{
+    width: 95%;
+    margin: 0 auto;
+    background-color: var(--secndory);
+    padding: 1.5rem;
+    border-radius: 1.3rem;
+    animation: model .5s 1;
+}
+@keyframes model {
+    0% {scale: 0;}
+    60% {scale: 1.2;}
+    100% {scale: 1;}
+}
+header ul.model li {
+    border-bottom:2px solid var(--border) ;
+    padding-bottom: .7rem;
+    padding-top: .5rem;
+}
+header ul.model li:last-child{
+    border: none;
+}
+header ul.model li:first-child{
+    border: none;
+    text-align: right;
+  
+}
+header .icon-cancel,.icon-moon-o,.icon-menu{
+    width: 2rem;
+    height: 2rem;
+    color: var(--subtitle);
+    background-color:var(bg-Header) ;
+    text-align: center;
+    border: 1px solid rgba(244,165,96,0.249);
+    border-radius: 50%;
+    transition: .2s;
+}
+header .icon-cancel:hover,.icon-moon-o:hover,.icon-menu:hover{
+    color: var(--title);
+    border: 1px solid rgb(244,165,96);
+    
+}
+header .icon-cancel:hover{
+    rotate: 360deg;
+    color: red;
+}
+
+.dev {
+    display:none ;
+}
+@media(max-width:700px){
+    header .menu{
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
+    .dev {
+        display:block;
+        color: var(--subtitle);
+        font-size:1.5rem;
+font-weight: 800;
+transition: .5s;
+    }
+    .dev.dev:hover{
+        color: var(--title);
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    .place{
+        display: none;
+    }
+}
+@media(min-width:700px){
+ header   .menulist{
+    display: none;
+ }
+}
