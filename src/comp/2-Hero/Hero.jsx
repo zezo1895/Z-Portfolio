@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import groovyWalkAnimation from "../../../src/anm/Animation - 1713828937616.json";
 import pic from "../../../src/avtar.png";
 import { motion } from "framer-motion";
+import "../style.css"
 
 const Hero = () => {
   return (
@@ -49,7 +50,7 @@ const Hero = () => {
             ></a>
           </li>
           <li>
-            <a className="icon-linkedin" href=""></a>
+            <a className="icon-social-linkedin" href=""></a>
           </li>
         </ul>
       </div>

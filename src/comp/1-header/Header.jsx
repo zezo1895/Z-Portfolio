@@ -1,8 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../1-header/Header.css";
 
 const Header = () => {
   const [Show, setShow] = useState(false);
+  const[theme,settheme]=useState(localStorage.getItem("currentmode"??"dark"))
+ 
+  useEffect(() => {
+    if(theme==="light"){
+      document.body.classList.remove('dark')
+      document.body.classList.add('light')
+    }
+    else{
+      document.body.classList.remove('light')
+      document.body.classList.add('dark')
+    }
+  },[theme])
   return (
     <header >
       <button className="icon-menu menu" onClick={() => {
@@ -29,11 +41,16 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <button className="icon-moon-o"></button>
+      <button onClick={() => {
+        // settheme("light")
+      localStorage.setItem("currentmode",theme ==="dark" ? "light":"dark")
+        settheme(localStorage.getItem("currentmode"))
+        // icon-moon-o
+      }} className= {theme==="dark"?"icon-moon-o":"icon-sun"}></button>
       {Show && (
         <div className="menulist">
           <ul className="model">
-            <li><button className="icon-cancel" onClick={() => {
+            <li><button className="icon-close" onClick={() => {
               setShow(false)
             }}></button></li>
             <li>

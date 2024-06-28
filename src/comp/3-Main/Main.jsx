@@ -1,55 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import "../3-Main/Main.css";
-import p2 from "../../../src/pic/p1.gif";
-import p3 from "../../../src/pic/p2.gif";
-import p4 from "../../../src/pic/p3.gif";
-import p5 from "../../../src/pic/p4.gif";
-import { motion , AnimatePresence } from "framer-motion";
 
-const myprojects = [
-  {
-    projectitle: "Films Website",
-    details:
-      " this website show many Films and Series with fake api from internet",
-    category: ["react", "bootsrtap", "html"],
-    imgpath: p2,
-    linkgit:"https://github.com/zezo1895/news",
-    linkrev:"https://zezo1895.github.io/news/",
-    key: 1,
-  },
-  {
-    projectitle: "landing1",
-    details: "This landing page with css from Elzero chanel",
-    category: ["css", "html","bootsrtap"],
-    imgpath: p3,
-    linkgit:"https://github.com/zezo1895/hospice",
-    linkrev:"https://zezo1895.github.io/hospice/",
-    key: 2,
-  },
-  {
-    projectitle: "Template1",
-    details: "This Template with css to show very good design",
-    category: ["css", "html"],
-    imgpath: p4,
-    linkgit:"https://github.com/zezo1895/T1",
-    linkrev:"https://zezo1895.github.io/T1/",
-    key: 3,
-  },
-  {
-    projectitle: "Template2",
-    details: "This Template with css to show very good design",
-    category: ["css", "html"],
-    imgpath: p5,
-    linkgit:"https://github.com/zezo1895/T2",
-    linkrev:"https://zezo1895.github.io/T2/",
-    key: 4,
-  },
-];
+import { motion , AnimatePresence } from "framer-motion";
+import "../style.css"
+import  Datacon  from "../../context/context";
+
+
 
 const Main = () => {
-  // useEffect(() => {
-  //   myprojects
-  // }, []);
+  const {myprojects} = useContext(Datacon);
   const [active, setactive] = useState("html");
 
   const [arr, setnewarr] = useState(myprojects);
@@ -59,7 +18,7 @@ const Main = () => {
       const zz = item.category.find((myitem) => {
         return myitem === type;
       });
-      return zz == type;
+      return zz === type;
     });
     setnewarr(newarr);
   };
@@ -108,6 +67,7 @@ const Main = () => {
       <AnimatePresence>
         {arr.map((item) => {
           return (
+            <a href={item.linkrev} target="_blank" rel="noreferrer">
             <motion.article layout transition={{ type:"spring",damping:8,stiffness:50 }}  initial={{ transform:"scale(0)" }} animate={{ transform:"scale(1)" }} exit={{ transform:"scale(0)" }} key={item.key}>
               <img className="coverpro" src={item.imgpath} alt="weza" />
               <div className="box d-flex">
@@ -126,12 +86,13 @@ const Main = () => {
                   <div className="more d-flex">
                     {" "}
                     <a className=" moree d-flex" href={item.linkrev}>
-                      More <span className="icon-arrow-right"></span>
+                      More <span className="icon-arrow-thin-right"></span>
                     </a>
                   </div>
                 </div>
               </div>
             </motion.article>
+            </a>
           );
         })}
         </AnimatePresence>
