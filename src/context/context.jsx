@@ -3,8 +3,9 @@ import p2 from "../pic/p1.gif";
 import p3 from "../pic/p2.gif";
 import p4 from "../pic/p3.gif";
 import p5 from "../pic/p4.gif";
-import p6 from "../pic/p5.gif";
+import p6 from "../pic/p5.jpg";
 import p7 from "../pic/p6.jpg";
+import p8 from "../pic/Screenshot 2024-12-09 172454.jpg";
 
 const Datacontext = createContext();
 
@@ -47,11 +48,11 @@ const myprojects = [
     key: 4,
   },
   {
-    projectitle: "Auth Test",
-    details: " This is  Authentication project for testing",
+    projectitle: "To-Do-list",
+    details: " to-do-list website with firebase auth multi language",
     category: ["css", "html","react"],
     imgpath: p6,
-    linkgit:"https://github.com/zezo1895/React2",
+    linkgit:"https://github.com/zezo1895/to-do-list/tree/main",
     linkrev:"https://react-level2-5eb47.web.app/",
     key: 5,
   },
@@ -63,6 +64,15 @@ const myprojects = [
     linkgit:"https://github.com/zezo1895/revision2",
     linkrev:"https://e-kit-793a2.web.app/",
     key: 6,
+  },
+  {
+    projectitle: "X-system 👋",
+    details: " Full stack project with node to insert data of user with auth",
+    category: ["css", "html","react","node","bootsrtap"],
+    imgpath: p8,
+    linkgit:"https://github.com/zezo1895/X-Sysytem",
+    linkrev:"https://x-sysytem-api.vercel.app",
+    key: 7,
   },
 ];
 

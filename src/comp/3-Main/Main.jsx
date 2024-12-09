@@ -3,12 +3,12 @@ import "../3-Main/Main.css";
 
 import { motion , AnimatePresence } from "framer-motion";
 import "../style.css"
-import  Datacon  from "../../context/context";
+import Datacontext from "../../context/context";
 
 
 
 const Main = () => {
-  const {myprojects} = useContext(Datacon);
+  const {myprojects} = useContext(Datacontext);
   const [active, setactive] = useState("html");
 
   const [arr, setnewarr] = useState(myprojects);
@@ -59,7 +59,16 @@ const Main = () => {
           }}
           className={active === "react" ? "active" : null}
         >
-          Recat
+          React
+        </button>
+        <button
+          onClick={() => {
+            setactive("node");
+            handel("node")
+          }}
+          className={active === "node" ? "active" : null}
+        >
+          Node JS
         </button>
       </div>
       {/* ========================================================== */}
