@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Z-Portfolio/static/css/main.84e167ec.css",
-    "main.js": "/Z-Portfolio/static/js/main.153f4841.js",
+    "main.css": "/Z-Portfolio/static/css/main.f4db5b7c.css",
+    "main.js": "/Z-Portfolio/static/js/main.f36b8653.js",
     "static/js/453.1407b060.chunk.js": "/Z-Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/p1.gif": "/Z-Portfolio/static/media/p1.f7756cea866a854ec325.gif",
     "static/media/p4.gif": "/Z-Portfolio/static/media/p4.8c265f2741467201a0f9.gif",
@@ -9,6 +9,7 @@
     "static/media/avtar.png": "/Z-Portfolio/static/media/avtar.e6a2f157ae3de2a43e8a.png",
     "static/media/p3.gif": "/Z-Portfolio/static/media/p3.33eae4c68fc943e49169.gif",
     "static/media/p6.jpg": "/Z-Portfolio/static/media/p6.4a0b29b7091b3d09eb2b.jpg",
+    "static/media/p9.jpg": "/Z-Portfolio/static/media/p9.0855ce7909eb4b886a27.jpg",
     "static/media/p5.jpg": "/Z-Portfolio/static/media/p5.912da5ac71f1b8e4ec22.jpg",
     "static/media/Screenshot 2024-12-09 172454.jpg": "/Z-Portfolio/static/media/Screenshot 2024-12-09 172454.b0d8639b226222fd228d.jpg",
     "static/media/icomoon.svg?2rmrju": "/Z-Portfolio/static/media/icomoon.290fb4709c79693b2eec.svg",
@@ -16,12 +17,12 @@
     "static/media/icomoon.woff?2rmrju": "/Z-Portfolio/static/media/icomoon.4c70de0958bacce752a8.woff",
     "static/media/icomoon.ttf?2rmrju": "/Z-Portfolio/static/media/icomoon.1206e470bbc50cdfed66.ttf",
     "index.html": "/Z-Portfolio/index.html",
-    "main.84e167ec.css.map": "/Z-Portfolio/static/css/main.84e167ec.css.map",
-    "main.153f4841.js.map": "/Z-Portfolio/static/js/main.153f4841.js.map",
+    "main.f4db5b7c.css.map": "/Z-Portfolio/static/css/main.f4db5b7c.css.map",
+    "main.f36b8653.js.map": "/Z-Portfolio/static/js/main.f36b8653.js.map",
     "453.1407b060.chunk.js.map": "/Z-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84e167ec.css",
-    "static/js/main.153f4841.js"
+    "static/css/main.f4db5b7c.css",
+    "static/js/main.f36b8653.js"
   ]
 }
